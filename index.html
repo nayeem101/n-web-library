@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>NS Web Library</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!--? Normal responsive navigation -->
+        <nav>
+            <ul class="ns_menu">
+                <li class="ns_logo"><a href="#">My WebSite</a></li>
+
+                <li class="ns_menu-item"><a href="#">Home</a></li>
+                <li class="ns_menu-item"><a href="#">About</a></li>
+                <li class="ns_menu-item"><a href="#">Services</a></li>
+                <li class="ns_menu-item"><a href="#">Features</a></li>
+                <li class="ns_menu-item"><a href="#">Blog</a></li>
+                <li class="ns_menu-item"><a href="#">Contact</a></li>
+
+                <li class="ns_menu-item ns_btn ns_btn-prime">
+                    <a href="#">Log In</a>
+                </li>
+                <li class="ns_menu-item ns_btn ns_btn-second">
+                    <a href="#">Sign Up</a>
+                </li>
+
+                <li class="ns_btn-toggle">
+                    <a href="#"> <i class="fa fa-bars"></i> </a>
+                </li>
+            </ul>
+        </nav>
+        <!--? normal nav end -->
+
+        <!--? scroll indicator / progress-bar-->
+        <section id="ns_scroll-indicator">
+            <div class="ns_progress-container">
+                <div class="ns_progress-bar"></div>
+            </div>
+        </section>
+        <!--? end scroll indicator -->
+
+        <!--? responsive image slider  -->
+        <section class="ns_slider" id="ns_slider">
+            <div class="ns_slider-wrapper" id="ns_slide-wrapper">
+                <div id="ns_slide" class="ns_slide current" data-slide-id="0">
+                    <img
+                        class="ns_slide-img"
+                        src="images/img1.jpg"
+                        alt="slide-image-1"
+                    />
+
+                    <div class="ns_slide-caption">
+                        <span class="ns_slide-caption--title"
+                            >Slide caption Title 1</span
+                        >
+                        <span class="ns_slide-caption--text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptates autem, saepe adipisci dignissimos
+                            harum est!
+                        </span>
+                    </div>
+                </div>
+                <div id="ns_slide" class="ns_slide" data-slide-id="1">
+                    <img
+                        class="ns_slide-img"
+                        src="images/img3.jpg"
+                        alt="slide-image-1"
+                    />
+
+                    <div class="ns_slide-caption">
+                        <span class="ns_slide-caption--title"
+                            >Slide caption Title 2</span
+                        >
+                        <span class="ns_slide-caption--text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Nostrum, saepe?
+                        </span>
+                    </div>
+                </div>
+                <div id="ns_slide" class="ns_slide" data-slide-id="2">
+                    <img
+                        class="ns_slide-img"
+                        src="images/img4.jpg"
+                        alt="slide-image-1"
+                    />
+
+                    <div class="ns_slide-caption">
+                        <span class="ns_slide-caption--title"
+                            >Slide caption Title 3</span
+                        >
+                        <span class="ns_slide-caption--text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ipsa, reprehenderit officia? Itaque delectus
+                            nisi fuga.
+                        </span>
+                    </div>
+                </div>
+                <!-- end of wrapper -->
+            </div>
+            <!--? prev and next btn -->
+            <a href="#!" class="ns_slider-btn ns_slider-btn--prev">
+                <i class="fa fa-chevron-left"> </i>
+            </a>
+            <a href="#!" class="ns_slider-btn ns_slider-btn--next">
+                <i class="fa fa-chevron-right"> </i>
+            </a>
+            <!-- ? indicators -->
+            <div class="ns_slider-indicators">
+                <ul class="ns_slider-indicators--list">
+                    <li
+                        class="ns_slider-indicators--item active"
+                        data-slide-to="0"
+                    ></li>
+                    <li
+                        class="ns_slider-indicators--item "
+                        data-slide-to="1"
+                    ></li>
+                    <li
+                        class="ns_slider-indicators--item "
+                        data-slide-to="2"
+                    ></li>
+                </ul>
+            </div>
+        </section>
+        <!--? end of responsive image slider  -->
+
+        <!-- ? responsive lightbox image gallery -->
+        <section id="ns_gallery" class="ns_gallery">
+            <div class="ns_container">
+                <div class="ns_row">
+                    <div class="ns_section-title">
+                        <h1>Image Gallery</h1>
+                    </div>
+                </div>
+                <div class="ns_row">
+                    <div class="ns_gallery-items">
+                        <div class="ns_gallery-item">
+                            <img src="images/img1.jpg" alt="image" />
+                            <div class="ns_gallery-item--overlay">
+                                <h2>Festival in the sky</h2>
+                                <span><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="ns_gallery-item">
+                            <img src="images/img2.jpg" alt="image" />
+                            <div class="ns_gallery-item--overlay">
+                                <h2>Water Water</h2>
+                                <span><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="ns_gallery-item">
+                            <img src="images/img3.jpg" alt="image" />
+                            <div class="ns_gallery-item--overlay">
+                                <h2>Sydney</h2>
+                                <span><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="ns_gallery-item">
+                            <img src="images/img4.jpg" alt="image" />
+                            <div class="ns_gallery-item--overlay">
+                                <h2>Ocean hill</h2>
+                                <span><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="ns_gallery-item">
+                            <img src="images/img5.jpg" alt="image" />
+                            <div class="ns_gallery-item--overlay">
+                                <h2>River side hill</h2>
+                                <span><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="ns_gallery-item">
+                            <img src="images/img6.jpg" alt="image" />
+                            <div class="ns_gallery-item--overlay">
+                                <h2>Green field</h2>
+                                <span><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ? lightbox  -->
+            <div class="ns_lightbox">
+                <div class="ns_lightbox-content">
+                    <div class="ns_lightbox-close">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <img src=" " class="ns_lightbox-img" alt="img" />
+                    <div class="ns_lightbox-caption">
+                        <span class="ns_lightbox-text"> </span>
+                        <span class="ns_lightbox-counter"> </span>
+                    </div>
+                </div>
+                <div class="ns_lightbox-controls">
+                    <div class="ns_lightbox-prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div class="ns_lightbox-next">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--? end of lightbox gallery  -->
+
+        <!--? Accordion/collapsible -->
+        <section id="ns_accordion">
+            <div class="ns_row">
+                <div class="ns_section-title">
+                    <h1>Accordion or Collapsible</h1>
+                </div>
+            </div>
+            <div class="ns_accordion">
+                <!--? main content -->
+                <div class="ns_accordion-box">
+                    <div class="ns_accordion--heading">
+                        <h3>Accordion Header 1</h3>
+                        <span class="fa fa-plus"></span>
+                    </div>
+                    <div class="ns_accordion--body">
+                        <div class="ns_accordion---text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Animi quis dolore officiis
+                                maxime doloremque accusamus error minima culpa
+                                iusto corporis, ullam, perferendis reiciendis
+                                temporibus nisi odit aliquid hic accusantium
+                                totam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--? end main content -->
+                <!--? main content -->
+                <div class="ns_accordion-box active">
+                    <div class="ns_accordion--heading">
+                        <h3>Accordion / Collapsible header 2</h3>
+                        <span class="fa fa-plus"></span>
+                    </div>
+                    <div class="ns_accordion--body">
+                        <div class="ns_accordion---text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Animi quis dolore officiis
+                                maxime doloremque accusamus error minima culpa
+                                iusto corporis, ullam, perferendis reiciendis
+                                temporibus nisi odit aliquid hic accusantium
+                                totam! Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quidem, iusto!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--? end main content -->
+                <!--? main content -->
+                <div class="ns_accordion-box">
+                    <div class="ns_accordion--heading">
+                        <h3>Accordion / Collapsible 3</h3>
+                        <span class="fa fa-plus"></span>
+                    </div>
+                    <div class="ns_accordion--body">
+                        <div class="ns_accordion---text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Animi quis dolore officiis
+                                maxime doloremque accusamus error minima culpa
+                                iusto corporis, ullam, perferendis reiciendis
+                                temporibus nisi odit aliquid hic accusantium
+                                totam. Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--? end main content -->
+            </div>
+        </section>
+        <!--?end of Accordion/collapsible -->
+
+        <!--? Modal -->
+        <section id="ns_modal">
+            <div class="ns_common-head">
+                <h2>This is a modal</h2>
+                <div class="ns_common-btn">
+                    <a type="button" class="ns_modal-open">Modal</a>
+                </div>
+            </div>
+
+            <div class="ns_modal ">
+                <div class="ns_modal-content">
+                    <div class="ns_modal-header">
+                        <h4>Modal Heading</h4>
+                        <span><i class="fa fa-times"></i></span>
+                    </div>
+                    <div class="ns_modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Deserunt dignissimos voluptatibus, architecto
+                            facere sit unde!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem, veniam.
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Dolores necessitatibus quisquam temporibus?
+                        </p>
+                    </div>
+                    <div class="ns_modal-footer">
+                        <span class="ns_modal--cancel">Cancel</span>
+                        <span class="ns_modal--agree">Agree</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--* Image Modal -->
+            <div class="ns_modal-image">
+                <h3>Image Modal</h3>
+                <div class="ns_modal-images">
+                    <img src="images/img1.jpg" alt="Festival Celebration" />
+                    <img src="images/img4.jpg" alt="Ocean Hill" />
+                    <img src="images/img3.jpg" alt="Sydney View" />
+                </div>
+
+                <div class="ns_image-modal">
+                    <div class="ns_image-modal-content">
+                        <div class="ns_modal-close">
+                            <i class="fa fa-times"></i>
+                        </div>
+                        <img
+                            src="images/img1.jpg"
+                            alt="Modal image"
+                            id="ns_image-modal-img"
+                        />
+                        <div id="modal-caption">Image Caption</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--? end of Modal  -->
+
+        <!--? custom Toasts/ alert box -->
+        <section id="ns_alert-box">
+            <div class="ns_common-head">
+                <h2>Alert Box / Toast</h2>
+                <div class="ns_common-btn">
+                    <button type="button" class="ns_alert-open">
+                        Alert Box
+                    </button>
+                </div>
+            </div>
+            <!-- * main content -->
+            <div class="ns_alert-box hide hidden">
+                <div class="ns_alert-msg">
+                    Message text here
+                    <span class="ns_alert-close"
+                        ><i class="fa fa-times"></i
+                    ></span>
+                </div>
+            </div>
+        </section>
+        <!--? end custom Toasts/ alert box -->
+
+        <!--? Tabs section -->
+        <section id="ns_tabs">
+            <div class="ns_common-head">
+                <h2>Custom Tabs</h2>
+            </div>
+            <div class="ns_tabs">
+                <div class="ns_tabs-header">
+                    <div class="ns_tab-btns">
+                        <button class="ns_tab-btn active">Tab 1</button>
+                        <button class="ns_tab-btn ">Tab 2</button>
+                        <button class="ns_tab-btn">Tab 3</button>
+                    </div>
+                </div>
+                <div class="ns_tab-contents">
+                    <div class="ns_tab-content active" id="ns_tab1">
+                        <h2>This is tab1 content title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptates maxime magni sint neque quidem
+                            architecto.
+                        </p>
+                    </div>
+                    <div class="ns_tab-content" id="ns_tab2">
+                        <h2>This is tab2 content title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptates maxime magni sint neque quidem
+                            architecto.
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Accusamus, porro?
+                        </p>
+                    </div>
+                    <div class="ns_tab-content" id="ns_tab3">
+                        <h2>This is tab3 content title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptates maxime magni sint neque quidem
+                            architecto.
+                        </p>
+                        <h2>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Hic incidunt ea, soluta consectetur doloribus
+                            aliquid neque!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--?end of Tabs section -->
+
+        <!--? buttons -->
+        <section id="ns_btns">
+            <div class="ns_common-head">
+                <h2>Custom Buttons</h2>
+            </div>
+            <div class="ns_btns-all">
+                <!--* ripple buttons -->
+                <button class="ns_btn-common ns_btn-ripple1">Ripple</button>
+                <button class="ns_btn-common ns_btn-ripple2">Ripple</button>
+
+                <!--* color hover buttons -->
+                <button class="ns_btn-common ns_btn-color1">Dark btn1</button>
+                <button class="ns_btn-common ns_btn-color2">Dark btn2</button>
+
+                <!--* shadow buttons -->
+                <button class="ns_btn-common ns_btn-shadow1">Shadow1</button>
+                <button class="ns_btn-common ns_btn-shadow2">Shadow2</button>
+
+                <!-- Add arrow btn -->
+                <button class="ns_btn-common ns_btn-arrow">
+                    <span>Arrow</span>
+                </button>
+
+                <!-- Pressed effect btn -->
+                <button class="ns_btn-common ns_btn-pressed">Press</button>
+
+                <!-- round btn -->
+                <button class="ns_btn-common ns_btn-round ns_btn-ripple1">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+        </section>
+        <!--? end buttons -->
+
+        <!-- ? Badges -->
+        <section id="ns_badges">
+            <div class="ns_common-head">
+                <h2>Custom Badges</h2>
+            </div>
+
+            <div class="ns_badges">
+                <button class="ns_btn-common ns_badge-num" data-badge="5">
+                    Number Badges example
+                </button>
+                <a href="#!" class="ns_btn-common ns_badge-num" data-badge="9"
+                    >Number Badges example
+                </a>
+
+                <button class="ns_btn-common ns_badge-new">
+                    New Badges example
+                </button>
+            </div>
+        </section>
+        <!-- ? end of Badges -->
+
+        <!--? paginition -->
+        <section id="ns_paginition">
+            <div class="ns_common-head">
+                <h2>Custom Paginition</h2>
+            </div>
+            <div class="ns_paginition">
+                <div class="ns_paginition-btns">
+                    <a href="#">&laquo</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#" class="active">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">&raquo</a>
+                </div>
+            </div>
+
+            <div class="ns_breadcrumb">
+                <h2>Breadcrumb Pagination</h2>
+                <ul class="ns_breadcrumb-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#ns_gallery">Gallery</a></li>
+                    <li><a href="#ns_modal">Modal</a></li>
+                    <li>Breadcrumb</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--? end of paginition -->
+
+        <section id="ns_dropdowns">
+            <div class="ns_common-head">
+                <h2>Custom Dropdowns</h2>
+            </div>
+
+            <div class="ns_dropdowns">
+                <div class="ns_dropdown-contents">
+                    <button
+                        id="ns_dropdown-click"
+                        class="ns_btn-common ns_btn-ripple1"
+                    >
+                        Dropdown
+                    </button>
+                    <div class="ns_dropdown-content ns_dropdown-down">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <!--* dropup   -->
+                    <button
+                        id="ns_dropup-click"
+                        class="ns_btn-common ns_btn-ripple1"
+                    >
+                        Dropdown
+                    </button>
+                    <div class="ns_dropdown-content ns_dropup">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <!--* hover dropdown   -->
+                    <div class="ns_dropdown-hover">
+                        <button
+                            id="ns_dropdown-hover--btn"
+                            class="ns_btn-common ns_btn-ripple1"
+                        >
+                            Dropdown
+                        </button>
+                        <div class="ns_dropdown-content ns_dd-hover--content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ?Fixed antion button -->
+        <section id="ns_toolbar">
+            <div class="ns_common-head">
+                <h2>FAB to toolbar</h2>
+            </div>
+
+            <div class="ns_toolbar">
+                <a class="ns_toolbar-fab ns_btn-ripple1"
+                    ><i class="fa fa-plus"></i
+                ></a>
+                <div class="ns_toolbar-btns">
+                    <a href="#!" class="ns_toolbar-btn"
+                        ><i class="fa fa-facebook"></i
+                    ></a>
+                    <a href="#!" class="ns_toolbar-btn"
+                        ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a href="#!" class="ns_toolbar-btn"
+                        ><i class="fa fa-youtube"></i
+                    ></a>
+                    <a href="#!" class="ns_toolbar-btn"
+                        ><i class="fa fa-instagram"></i
+                    ></a>
+                </div>
+            </div>
+
+            <!--? fab to toolbar -->
+            <div class="ns_fab-toolbar">
+                <a class="ns_fab-toolbar-fab ns_btn-ripple1"
+                    ><i class="fa fa-edit"></i
+                ></a>
+                <ul class="ns_fab-toolbar-btns">
+                    <li class="ns_fab-toolbar-btn">
+                        <a href="#!"><i class="fa fa-home"></i></a>
+                    </li>
+                    <li class="ns_fab-toolbar-btn">
+                        <a href="#!"><i class="fa fa-share"></i></a>
+                    </li>
+                    <li class="ns_fab-toolbar-btn">
+                        <a href="#!"><i class="fa fa-clipboard"></i></a>
+                    </li>
+                    <li class="ns_fab-toolbar-btn">
+                        <a href="#!"><i class="fa fa-download"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--? end Fixed antion button -->
+
+        <!--? Tooltips  -->
+        <section id="ns_tooltips">
+            <div class="ns_common-head">
+                <h2>Tooltips</h2>
+            </div>
+
+            <div class="ns_tooltips-container">
+                <div class="ns_tooltip-top">
+                    <h3>Hover over me</h3>
+                    <span class="ns_tooltip-text">Tooltip Text</span>
+                </div>
+            </div>
+        </section>
+
+        <!--? end Tooltips  -->
+
+        <!-- ? cards section -->
+        <section id="ns_cards">
+            <div class="ns_common-head">
+                <h2>Custom Cards</h2>
+            </div>
+
+            <div class="ns_card-container">
+                <main class="ns_card-grid">
+                    <article>
+                        <img src="images/img1-small.jpg" alt="Card Image" />
+                        <div class="ns_card-text">
+                            <h3>Card1 Title</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                            <button class="ns_btn-common ns_card-btn">
+                                Card Btn
+                            </button>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="images/img2-small.jpg" alt="Card Image" />
+                        <div class="ns_card-text">
+                            <h3>Card2 Title</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                            <button class="ns_btn-common ns_card-btn">
+                                Card Btn
+                            </button>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="images/img3-small.jpg" alt="Card Image" />
+                        <div class="ns_card-text">
+                            <h3>Card3 Title</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                            <button class="ns_btn-common ns_card-btn">
+                                Card Btn
+                            </button>
+                        </div>
+                    </article>
+                </main>
+            </div>
+            <br /><br /><br />
+            <!-- ? profile card -->
+            <div class="ns_profile-card">
+                <main class="ns_profile-card-grid">
+                    <article>
+                        <img src="images/me.jpg" alt="Person's Image" />
+                        <div class="ns_procard-text">
+                            <h3>Najmul Islam Nayeem</h3>
+                            <h4>Web Developer (Javascript)</h4>
+                            <p>NS Technologies</p>
+                        </div>
+                        <div class="ns_procards-btns">
+                            <a href="#!"><i class="fa fa-phone"></i></a>
+                            <a href="#!"><i class="fa fa-envelope"></i></a>
+                            <a href="#!"><i class="fa fa-linkedin"></i></a>
+                            <a href="#!"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <button class="ns_btn-common ns_procards-contact">
+                            Contact
+                        </button>
+                    </article>
+                    <article>
+                        <img src="images/me.jpg" alt="Person's Image" />
+                        <div class="ns_procard-text">
+                            <h3>Najmul Islam</h3>
+                            <h4>CEO & Founder</h4>
+                            <p>NS Technologies</p>
+                        </div>
+                        <div class="ns_procards-btns">
+                            <a href="#!"><i class="fa fa-phone"></i></a>
+                            <a href="#!"><i class="fa fa-envelope"></i></a>
+                            <a href="#!"><i class="fa fa-linkedin"></i></a>
+                            <a href="#!"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <button class="ns_btn-common ns_procards-contact">
+                            Contact
+                        </button>
+                    </article>
+                    <article>
+                        <img src="images/me.jpg" alt="Person's Image" />
+                        <div class="ns_procard-text">
+                            <h3>Nayeem Islam</h3>
+                            <h4>Back End Developer</h4>
+                            <p>NS Technologies</p>
+                        </div>
+                        <div class="ns_procards-btns">
+                            <a href="#!"><i class="fa fa-phone"></i></a>
+                            <a href="#!"><i class="fa fa-envelope"></i></a>
+                            <a href="#!"><i class="fa fa-linkedin"></i></a>
+                            <a href="#!"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <button class="ns_btn-common ns_procards-contact">
+                            Contact
+                        </button>
+                    </article>
+                </main>
+            </div>
+        </section>
+        <!-- ? end of profile cads -->
+
+        <!--? Parallax effect -->
+        <section id="ns_parallax">
+            <div class="ns_common-head">
+                <h2>Parallax effect</h2>
+            </div>
+
+            <div id="ns_prallax-special" class="ns_parallax-container">
+                <div class="ns_parallax-items">
+                    <h3>This is a parallax 1 special</h3>
+                    <p>
+                        This parallax image scrolls .5 times slower than the
+                        items it contains
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugit perspiciatis earum et. Pariatur, repudiandae
+                        tempora?
+                    </p>
+                </div>
+            </div>
+
+            <div class="ns_parallax-container">
+                <div class="ns_parallax-items">
+                    <h3>This is a parallax 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At ullam fugit eligendi qui non sed blanditiis dolore
+                        corrupti laboriosam dolorum!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Accusamus, ullam?
+                    </p>
+                </div>
+            </div>
+
+            <div class="ns_parallax-container">
+                <div class="ns_parallax-items">
+                    <h3>This is a parallax 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At ullam fugit eligendi qui non sed blanditiis dolore
+                        corrupti laboriosam dolorum!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--? end of Parallax effect -->
+
+        <!-- ? sidebar with icons -->
+        <section id="ns_sidebar">
+            <div class="ns_common-head">
+                <h2>Sidebar With Icons</h2>
+            </div>
+
+            <div class="ns_sidebar">
+                <div id="ns_sidebar-btn" title="Sidebar">
+                    <span><i class="fa fa-chevron-right"></i></span>
+                </div>
+                <ul class="ns_sidebar-icons">
+                    <li class="ns_sidebar-icon">
+                        <a href="#"> <i class="fa fa-home"></i> Home </a>
+                    </li>
+                    <li class="ns_sidebar-icon">
+                        <a href="#ns_gallery">
+                            <i class="fa fa-image"></i> Gallery
+                        </a>
+                    </li>
+                    <li class="ns_sidebar-icon">
+                        <a href="#ns_tabs">
+                            <i class="fa fa-table"></i> Tabs
+                        </a>
+                    </li>
+                    <li class="ns_sidebar-icon">
+                        <a href="#ns_cards">
+                            <i class="fa fa-id-card"></i> Cards
+                        </a>
+                    </li>
+                    <li class="ns_sidebar-icon">
+                        <a href="#ns_accordion">
+                            <i class="fa fa-briefcase"></i> Accordion
+                        </a>
+                    </li>
+                    <li class="ns_sidebar-icon">
+                        <a href="#ns_parallax">
+                            <i class="fa fa-print"></i> Parallax
+                        </a>
+                    </li>
+                    <li class="ns_sidebar-icon">
+                        <a href="#ns_sign-forms">
+                            <i class="fa fa-wpforms"></i> Forms
+                        </a>
+                    </li>
+                    <li class="ns_sidebar-icon">
+                        <a href="#ns_footer">
+                            <i class="fa fa-file"></i> Footer
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ? end sidebar with icons -->
+
+        <!--? responsive sign up forms -->
+        <section id="ns_sign-forms">
+            <div class="ns_common-head">
+                <h2>Responsive Sign up forms</h2>
+            </div>
+
+            <div class="ns_form-wrapper">
+                <!--* registration form  -->
+                <div class="ns_form-title">
+                    <h3>Registration Form</h3>
+                </div>
+                <div class="ns_signup-form">
+                    <div class="ns_input-field">
+                        <label for="ns_form-fname">First Name</label>
+                        <input
+                            type="text"
+                            class="ns_signup-form--input"
+                            id="ns_form-fname"
+                        />
+                    </div>
+
+                    <div class="ns_input-field">
+                        <label for="ns_form-lname">Last Name</label>
+                        <input
+                            type="text"
+                            class="ns_signup-form--input"
+                            id="ns_form-lname"
+                        />
+                    </div>
+
+                    <div class="ns_input-field">
+                        <label for="ns_form-pass">Password</label>
+                        <input
+                            type="password"
+                            class="ns_signup-form--input"
+                            id="ns_form-pass"
+                        />
+                    </div>
+
+                    <div class="ns_input-field">
+                        <label for="ns_form-cpass">Confirm Password</label>
+                        <input
+                            type="password"
+                            class="ns_signup-form--input"
+                            id="ns_form-cpass"
+                        />
+                    </div>
+
+                    <div class="ns_input-field">
+                        <label for="ns_form-select">Gender</label>
+                        <div class="ns_form-customSelect">
+                            <select>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="ns_input-field">
+                        <label for="ns_form-email">Email Address</label>
+                        <input
+                            type="email"
+                            class="ns_signup-form--input"
+                            name="ns_form-email"
+                        />
+                    </div>
+
+                    <div class="ns_input-field">
+                        <label for="ns_form-mobile">Mobile No.</label>
+                        <input
+                            type="text"
+                            class="ns_signup-form--input"
+                            name="ns_form-mobile"
+                        />
+                    </div>
+
+                    <div class="ns_input-field">
+                        <label for="ns_form-address">Address</label>
+                        <textarea
+                            class="ns_signup-form-textArea"
+                            id="ns_form-address"
+                        ></textarea>
+                    </div>
+
+                    <div class="ns_input-field">
+                        <label for="ns_form-postal">Postal Code</label>
+                        <input
+                            type="text"
+                            class="ns_signup-form--input"
+                            id="ns_form-postal"
+                        />
+                    </div>
+
+                    <div class="ns_input-field terms">
+                        <label class="ns_form-term">
+                            <input type="checkbox" id="ns_form-checkbox" />
+                            <span class="ns_checkmark"></span>
+                        </label>
+                        <p>Agreed to terms and conditions</p>
+                    </div>
+
+                    <div class="ns_input-field">
+                        <input
+                            type="submit"
+                            value="Register"
+                            class="ns_btn-common ns_submit-btn"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- * contact form -->
+            <div class="ns_contact-form">
+                <h2 class="ns_brand"><span>NS</span> Web Tech</h2>
+
+                <div class="ns_contact-form-wrapper">
+                    <div class="ns_form-company-info">
+                        <h3>NS Web Technologies</h3>
+                        <ul>
+                            <li>
+                                <i class="fa fa-road"></i> 101, IT Park Street,
+                                Dhaka-1205
+                            </li>
+                            <li><i class="fa fa-phone"></i>+880-101-110</li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                info@nswebtech.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ns_form-contact">
+                        <h3>Email Us</h3>
+                        <form>
+                            <p>
+                                <label for="name">Name</label>
+                                <input type="text" name="name" />
+                            </p>
+                            <p>
+                                <label for="company">Company</label>
+                                <input type="text" name="company" />
+                            </p>
+                            <p>
+                                <label for="email">Email Address</label>
+                                <input type="email" name="email" />
+                            </p>
+                            <p>
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="phone" />
+                            </p>
+                            <p class="full">
+                                <label for="message">Message</label>
+                                <textarea name="message" rows="5"></textarea>
+                            </p>
+                            <p class="full">
+                                <button class="ns_btn-common">Submit</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--? end responsive sign up forms -->
+
+        <!-- ? collections -->
+        <section id="ns_lists">
+            <div class="ns_common-head">
+                <h2>Collections</h2>
+            </div>
+
+            <!-- * normal collection -->
+            <div class="ns_list-normal">
+                <div class="ns_list-container">
+                    <ul class="ns_list-items">
+                        <li class="ns_list-header">
+                            <h3>Normal List Title</h3>
+                        </li>
+                        <li class="ns_list-item">Item 1</li>
+                        <li class="ns_list-item">Item 2</li>
+                        <li class="ns_list-item">Item 3</li>
+                        <li class="ns_list-item">Item 4</li>
+                        <li class="ns_list-item">Item 5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- * Hover collection with details -->
+            <div class="ns_list-hover">
+                <div class="ns_list-container">
+                    <ul class="ns_list-items with-hover">
+                        <li class="ns_list-header">
+                            <h3>Hover List Title</h3>
+                        </li>
+                        <li class="ns_list-item">
+                            Item 1
+                            <a href="#!">
+                                Details
+                                <i class="fa fa-chevron-circle-right"></i>
+                            </a>
+                        </li>
+                        <li class="ns_list-item">
+                            Item 2
+                            <a href="#!">
+                                Details
+                                <i class="fa fa-chevron-circle-right"></i>
+                            </a>
+                        </li>
+                        <li class="ns_list-item">
+                            Item 3
+                            <a href="#!">
+                                Details
+                                <i class="fa fa-chevron-circle-right"></i>
+                            </a>
+                        </li>
+                        <li class="ns_list-item">
+                            Item 4
+                            <a href="#!">
+                                Details
+                                <i class="fa fa-chevron-circle-right"></i>
+                            </a>
+                        </li>
+                        <li class="ns_list-item">
+                            Item 5
+                            <a href="#!">
+                                Details
+                                <i class="fa fa-chevron-circle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- * filter collection list items -->
+            <div class="ns_list-filter">
+                <div class="ns_list-container">
+                    <div class="ns_filter-input">
+                        <span><i class="fa fa-search"></i></span>
+                        <input
+                            type="text"
+                            id="filterInput"
+                            placeholder="Search for names.."
+                        />
+                    </div>
+
+                    <ul class="ns_list-filter-items">
+                        <li class="ns_list-filter-item">
+                            <a href="#!">Nayeem</a>
+                        </li>
+                        <li class="ns_list-filter-item">
+                            <a href="#!">Suchana</a>
+                        </li>
+                        <li class="ns_list-filter-item">
+                            <a href="#!">Abir</a>
+                        </li>
+                        <li class="ns_list-filter-item">
+                            <a href="#!">Razu</a>
+                        </li>
+                        <li class="ns_list-filter-item">
+                            <a href="#!">Omar</a>
+                        </li>
+                        <li class="ns_list-filter-item">
+                            <a href="#!">Rashed</a>
+                        </li>
+                        <li class="ns_list-filter-item">
+                            <a href="#!">Akib</a>
+                        </li>
+                        <li class="ns_list-filter-item">
+                            <a href="#!">Dristy Vai</a>
+                        </li>
+                        <li class="ns_list-filter-item">
+                            <a href="#!">Forhad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ? advance footer -->
+        <section id="ns_footer">
+            <div class="ns_footer">
+                <div class="ns_footer-content">
+                    <div class="ns_footer-section ns_footer-about">
+                        <h2>NS Web Library</h2>
+                        <p>
+                            This is a simple web library made with html5, css3
+                            and vanilla Javascript. It can be used in making of
+                            any website. It is highly modifyable and modular.
+                            Easy to intrigate in any web applications.
+                        </p>
+                        <div class="ns_footer-about--contact">
+                            <a href="#!">
+                                <i class="fa fa-phone"></i> +880-1830-671247
+                            </a>
+                            <a href="#!">
+                                <i class="fa fa-envelope"></i>
+                                info@mywebsite.com
+                            </a>
+                            <div class="ns_footer-social-icons">
+                                <span>
+                                    <i class="fa fa-facebook-square"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-instagram"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-twitter"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-youtube"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ns_footer-section ns_footer-links">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="#ns_gallery">Gallery</a></li>
+                            <li><a href="#ns_slider">Slider</a></li>
+                            <li><a href="#ns_accordion">Accordion</a></li>
+                            <li><a href="#ns_tabs">Tabs</a></li>
+                            <li><a href="#ns_parallax">Parallax</a></li>
+                            <li><a href="#ns_cards">Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class="ns_footer-section ns_footer-contact">
+                        <h2>Contact Us</h2>
+                        <form>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Your Email Address"
+                            />
+                            <textarea
+                                name="message"
+                                placeholder="Your Message..."
+                            ></textarea>
+                            <button class="ns_btn-common ns_footer-contact-btn">
+                                <i class="fa fa-paper-plane"></i>Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="ns_footer-bottom">
+                    <span>
+                        &copy; NS Web Technologies | Designed by Nayeem
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <script src="main.js"></script>
+    </body>
+</html>
